@@ -20,7 +20,7 @@ class Producto extends Conexion{
         $statement->bindParam(':unidad_medida', $unidad_medida);
         $statement->bindParam(':descripcion', $descripcion);
         if($statement->execute()){
-            header('Location ../vista/CRUDUsuarios.php');
+            header('Location ../../Producto/vista/CRUDUsuarios.php');
         }else{
             header('Location ../vista/CRUDUsuarios.php');
         }

@@ -116,21 +116,29 @@ $Modelo = new Usuario();
                 <form method="POST" action="../controladores/add.php">
 
                     <label for="">Identificacion</label>
-                    <input type="text" name="Identificacion">
+                    <input type="text" name="Identificacion" pattern="[0-9]+" required>
                     <label for="">Tipo_Identificacion</label>
-                    <input type="text" name="Tipo_Identificacion">
+                    <select name="color" id="color" name="Tipo_Identificacion" required>
+                    <option disabled selected>Selecciona una opción</option>
+                    <option value="r" >CC</option>
+                    <option value="a">TI</option>
+                    </select>
                     <label for="">Nombre</label>
-                    <input type="text" name="Nombre">
+                    <input type="text" name="Nombre" pattern="[a-zA-Z ]+" required>
                     <label for="">Apellido</label>
-                    <input type="text" name="Apellido">
+                    <input type="text" name="Apellido" pattern="[a-zA-Z ]+" required>
                     <label for="">Celular</label>
-                    <input type="text" name="Celular">
+                    <input type="text" name="Celular" pattern="[0-9]+{1.11}" required>
                     <label for="">Direccion</label>
-                    <input type="text" name="Direccion">
+                    <input type="text" name="Direccion" pattern="[$.,%#/_- ]+[a-zA-Z0-9]+{1,}" required>
                     <label for="">Password</label>
-                    <input type="text" name="Password">
+                    <input type="text" name="Password" pattern="[$.,%#/_- ] [a-zA-Z0-9] {1,}" required>
                     <label for="">Estado</label>
-                    <input type="text" name="Estado">
+                    <select name="color" id="color" name="Estado" required>
+                    <option disabled selected>Selecciona una opción</option >
+                    <option value="r" >Activo</option>
+                    <option value="a">Inactivo</option>
+                    </select>
 
 
 

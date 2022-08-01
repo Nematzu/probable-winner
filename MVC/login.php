@@ -21,9 +21,9 @@
         <div class="login-box">
             <form method="POST" action="Usuario/controladores/login.php">
             <label for="">Numero de documento</label>
-            <input type="text" name="Usuario">
+            <input type="text" name="Usuario" pattern="[a-zA-Z ]+">
             <label for="">Contraseña</label>
-            <input type="password" name="Contrasena">
+            <input type="password" name="Contrasena" pattern="[$.,%#/_- ] [a-zA-Z0-9] {1,}">
             <input type="submit" value="Enviar">
         </form>
         </div>
